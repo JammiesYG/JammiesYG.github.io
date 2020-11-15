@@ -1,0 +1,105 @@
+* {
+	--text-color:         #FFFFFF;
+	--header-color:       #FFFFFF;
+
+	--link-color:         #888888;
+	--link-color-hover:   #FFFFFF;
+	--link-color-visited: #FFFFFF;
+	
+	--card-color:         #1f1f1f;
+	--bg-color:           #141414;
+	--border-color:       #4963F8;
+	--border-thickness:   0.0px;
+	--border-radius:      0.0rem;
+	--shadow-size:        10px;
+	--font-type:          EightBitDragon;
+}
+
+a {
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	padding-top: 15px;
+}
+
+@font-face {
+	font-family: EightBitDragon;
+	src: url(../font/EightBitDragon-anqx.ttf);
+}
+
+body {
+	background-color: var(--bg-color);
+	padding-top: 50px;
+}
+
+p {
+	text-align: center;
+	font-family: var(--font-type); 
+	font-size: 20px;
+	color: var(--header-color);
+	padding-top: 10px;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 540px;
+	display: block;
+
+	box-shadow: var(--shadow-size) var(--shadow-size) var(--shadow-size) #000000;
+
+	border-style: solid;
+	border-width: var(--border-thickness);
+	border-color: var(--border-color);
+	border-radius: var(--border-radius);
+}
+
+.content {
+	height: 160px;
+	width: 500px;
+	margin: auto;
+	margin-top: -1px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+
+	box-shadow: var(--shadow-size) var(--shadow-size) var(--shadow-size) #000000;
+
+	font-family: var(--font-type);
+	background: var(--card-color);
+
+	border-style: solid;
+	border-width: var(--border-thickness);
+	border-color: var(--border-color);
+	border-radius: var(--border-radius);
+}
+
+.t_column {
+	float: left;
+}
+
+.t_header {
+	color: var(--header-color);
+	font-size: 14px;
+	font-weight: normal;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: left;
+}
+
+.t_links a {
+	color: var(--link-color)
+}
+
+.t_links a:link {
+	color: var(--link-color)
+}
+
+.t_links a:visited {
+	color: var(--link-color)
+}
+
+.t_links a:hover {
+	color: var(--link-color-hover)
+}
